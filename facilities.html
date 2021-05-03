@@ -1,0 +1,174 @@
+<!-- CDS GYM Facilities page - written by Simon Monaghan, Ciaran Keating, David Quigley. May 2021.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+
+		<title> Facilities </title>
+		<!-- This is the link for the stylesheet and the header links -->
+			<link rel="stylesheet" href="external.css"  >
+		    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap">
+		    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		    <script src="script.js"></script>
+		    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		</head>
+
+		<body>
+
+		<!-- Header and Search Bar -->
+
+		    <header class="headsec">
+		        <a href="index.html"><img src="logo.png" alt="logo" id="logo"></a>
+
+		        <div class="searchbar">
+		            <form id="searchform" class="search1" method="get" action="source.html" >
+		            <input type="text" name="text" class="search" placeholder="Search here!">
+		            <input type="submit" name="submit" class="submit" value="Search">
+		            </form>
+		        </div>
+
+		    </header>
+
+		<!-- Navigation Menu -->
+
+		    <div class="navbar">
+		        <ul>
+		            <li><a href="Index.html">Home</a></li>
+		            <li><a href="facilities.html">Facilities</a></li>
+		            <li><a href="covid.html">Covid-19</a></li>
+		            <li><a href="Contact_us.html">Contact Us</a></li>
+		        </ul>
+    </div>
+
+<!-- Container for the images -->
+<div class="container">
+
+  <!-- full size images and the accompanying text-->
+  <div class="mySlides"> <div class="text-block">
+      <img src="free_weights.jpg" alt="Free Weights" class="responsive">
+         <h4>Free Weight</h4>
+	      <p>Or state of the art free weights section has a wide range of equipment suitable for those beginning or those used to heavy lifting. Out stations and weights are sanatized on a regular basis and spray and wipes are widely available throughout the gym.</p>
+   </div>
+  </div>
+
+  <div class="mySlides"><div class="text-block">
+      <img src="weight_machines.jpg"  alt="Weight Machines" class="responsive">
+       <h4>Weight Machines</h4>
+    <p>We have an incredible variety of weight machines in the gym. With over 3000sq feet of space in our weight machines and free weights facilities there is all ample space and a selction of eqipment available.</p>
+  </div>
+  </div>
+
+  <div class="mySlides"><div class="text-block">
+      <img src="cardio.jpg"  alt="Cardio" class="responsive">
+         <h4>Cardio</h4>
+	      <p>On our upper balcony level you will find a large selection of cardio equipment. Our top of range equipment are fully bluetooth compatible and can easily link to your personal fitness device. Due to the large size of our cardio area we have been able to space our equipment apart to provide you with extra safety during your training session.</p>
+  </div>
+  </div>
+
+  <div class="mySlides"><div class="text-block">
+      <img src="training_areas.jpg" alt="Training Areas" class="responsive">
+         <h4>Training Areas</h4>
+	      <p>Our three specially designed training areas play host to an incredible selection of classes. All of our training rooms are bright and well ventilated. They are fully cleaned and santized after every class and our trainers and staff always amke your health and safety our top priority</p>
+  </div>
+  </div>
+
+  <div class="mySlides"><div class="text-block">
+      <img src="swimming_pool.jpg"  alt="Swimming Pool" class="responsive">
+         <h4>Swimming Pool</h4>
+	      <p>We are delighted to welcome you back to our 8 lane, 25 metre swimming pool. The pool is kept clean using the highest industry standards and we have employed additional cleaning crews to ensure that it is the safest possible environment for you. We offer private and group swimming lessons with our fully trained instructors.</p>
+  </div>
+  </div>
+
+  <div class="mySlides"><div class="text-block">
+      <img src="exercise_class_pool.jpg"  alt="Exercise Pool Classes" class="responsive">
+        <h4>Pool Classes</h4>
+	      <p>We have a number of exercise classes on off in our exercise pool. Our classes range from pre-natal, endurance, recovery and weightlose. We also offer a number of gender based classes and for prople in particular age groups. These classes are ideal for those in recovery from injuries or if you are just looking to try something different.</p>
+  </div>
+  </div>
+
+  <!-- Buttomns for next and previous images including icon code-->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+  <!-- smaller thumbnail images with instructions for cursor changes-->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="free_weights.jpg" style="width:100%" onclick="currentSlide(1)" alt="Free Weights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="weight_machines.jpg" style="width:100%" onclick="currentSlide(2)" alt="Weight Machines">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="cardio.jpg" style="width:100%" onclick="currentSlide(3)" alt="Cardio Training Area">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="training_areas.jpg" style="width:100%" onclick="currentSlide(4)" alt="Indoor Class Training Area">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="swimming_pool.jpg" style="width:100%" onclick="currentSlide(5)" alt="25metre Swimming Pool">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="exercise_class_pool.jpg" style="width:100%" onclick="currentSlide(6)" alt="Swimming Pool Exercise Class">
+    </div>
+  </div>
+</div>
+
+<!-- script for slideshow gallery -->
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+
+<!-- Footer -->
+<footer>
+      <div class="footer">
+
+          <div class="footermiddle">
+
+              <div class="footermiddleleft">
+                  <a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+                  <a href="https://www.twitter.com" class="fa fa-twitter" target="_blank"></a>
+                  <a href="https://www.instagram.com" class="fa fa-instagram" target="blank"></a>
+              </div>
+
+              <div class="footermiddleright">
+                  <a href="https://www.google.ie/maps/place/Dublin">
+                      <h2>Where are we ?</h2>
+                  </a>
+              </div>
+          </div>
+       </div>
+</footer>
+</body>
+	</html>

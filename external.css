@@ -1,0 +1,283 @@
+/* This is the default body style*/
+body {
+    font-family: 'Krona One', sans-serif;
+    background-color: white;
+  }
+
+  p {
+    line-height: 20px;
+    font-family: 'Krona One', sans-serif;
+  }
+
+.welcome {
+    text-align: center;
+    border-style: dashed;
+    border-top: rgba(0, 0, 0, 0.5);
+    border-bottom: rgba(0, 0, 0, 0.5);
+    
+}
+
+/*// Header //*/
+.headsec {
+    width: 100%;
+    height: auto;
+    background: url("logo1.png");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position-y: -30px;
+    }
+
+
+#logo {
+    width: 200px;
+    height:100px;
+    border-radius: 20px;
+}
+  
+/*// Navigation Menu //*/
+ul {
+    font-size: 20px;
+    font-family: 'Krona One', sans-serif;
+    margin: 0;
+    padding-left: 2%;
+    overflow: hidden;
+    background-color: red;
+    list-style: none;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+    line-height: normal;
+  }
+
+li {
+    float: left;
+  }
+
+li a {
+    display: block;
+    color: #ffffff;
+    text-shadow: 0.25px 0.25px 0.25px black;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+  }
+
+
+  /*// Search Bar //*/
+.searchbar {
+    font-family: 'Krona One', sans-serif;
+    margin-top: 50px;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    left:75%;
+    top:25%;
+  }
+
+  .submit {
+      font-family:'Krona One', sans-serif;
+      background-color: red;
+      color: #ffffff;
+  }
+	
+	
+/* Position the image container (used to position the left and right arrows) */
+	.container {
+	 	 position: relative;
+	}
+	
+/* This is the instructions for the text */	
+	.text-block {
+		position: relative;
+		background: gray;
+	  	color: white;
+	 	margin: 0;
+  		padding: 1px;
+	}
+
+/* Hide the images by default */
+	.mySlides {
+	  	display: none;
+	}
+
+/* Makes the images respond to page size */
+	.responsive {
+	  	width: 100%;
+	  	height: auto;
+	}
+	
+/* Add a pointer when hovering over the thumbnail images */
+	.cursor {
+	  	cursor: pointer;
+	}
+	
+/* Instructions for next and previous buttons */
+	.prev,
+	.next {
+	 	cursor: pointer;
+	 	position: absolute;
+	 	top: 40%;
+	 	width: auto;
+	 	padding: 16px;
+	  	margin-top: -50px;
+	  	color: white;
+	  	font-weight: bold;
+	  	font-size: 20px;
+	}
+	
+/* Place the buttons on the left and right */
+	.previous {
+		  left: 0;
+		  border-radius: 3px 0 0 3px;
+		}
+	.next {
+	  	right: 0;
+	  	border-radius: 3px 0 0 3px;
+	}
+	
+/* When hovering add a red background color */
+	.prev:hover,
+	.next:hover {
+	 	 background-color: red;
+	}
+
+/* Instructions for the thumbnails */	
+
+	.row:after {
+	 	 content: "";
+	 	 display: table;
+	 	 clear: both;
+	}
+	
+	/* Six columns side by side */
+	.column {
+		  float: left;
+	 	 width: 16.66%;
+	}
+	
+/* Adds opacity to thumnbails */
+	.demo {
+		  opacity: 0.5;
+	}
+	
+
+
+/* Create three equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the  columns stack  top of each other */
+@media screen and (max-width:600px) {
+  .column1 {
+    width: 100%;
+  }
+}
+
+
+  /*//// Footer //// */
+
+  .footer {
+    float: left;
+    width: 100%;
+    height: 90px;
+    border-top: 20px solid red;
+  }
+
+  
+.footermiddle {
+    float: left;
+    height: 100%;
+    width: 100%;
+  }
+  
+
+.footermiddleleft {
+    float: left;
+    height: 100%;
+    width: 50%;
+    background-color: red;
+    text-align: center;
+    padding-top: 1vh;
+  }
+
+  .footermiddleright {
+    float: left;
+    height: 100%;
+    width: 50%;
+    background-color: red;
+    text-align: center;
+    padding-top: 1vh;
+  }
+
+  .footermiddleright h2 {
+    color: white;
+    font-size: 3vh;
+    text-shadow: 1px 1px 1px black;
+    font-weight: lighter;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  .footer ul {
+    clear: both;
+    display: block;
+    color: white;
+  }
+
+  .footer li {
+    display: block;
+    display: inline;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+
+  /* Facebook */
+.fa-facebook {
+    border-color: white;
+    border-style: solid;
+    border-width: thin;
+    color: white;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+
+  /* Twitter */
+.fa-twitter {
+    border-color: white;
+    border-style: solid;
+    border-width: thin;
+    color: white;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+
+  /* Instgram */
+.fa-instagram {
+    border-color: white;
+    border-style: solid;
+    border-width: thin;
+    color: white;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }

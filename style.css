@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.logo img {
+        max-width: 50%;
+        height: auto;
+}
+
+/* Navigation*/
+
+.nav-container{
+    background:#ffff;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0);
+    height: 72px;
+}
+
+.wrapper{
+    width: 1200px;
+    margin:0 auto;
+}
+nav{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    height: 72px;
+}
+nav ul {
+    display: flex;
+}
+
+.nav-items li {
+    list-style:none;
+    margin-right: 100px;
+
+}
+
+.nav-items li:nth-last-of-type(1){
+    margin:0;
+}
+
+.nav-items li a {
+    color: black;
+    font: size 24px;
+    font-family: sans-serif;
+}
+
+.header-container{
+    background: rgb(214, 212, 212) ;
+    height: calc(100vh - 72px);
+    display:flex;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 75px;
+    color:black;
+    margin-bottom: 24px;
+
+}
+
+header p {
+    font-size: 24px;
+    line-height: 42px;
+    color:black;
+    width: 418px;
+    margin-bottom: 24px;
+}
+
+header a {
+    color:antiquewhite;
+    font-size:24px;
+    text-decoration: none;
+    background: black;
+    border-radius: 8px;
+    padding: 12px 48px;
+    display: inline-block;
+    transition: 300ms;
+}
+
+header a:hover {
+    transform: translateY(-8px);
+}
+.social-icons{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.social-icons a:nth-of-type(1){
+    margin-left:0;
+
+}
+
+.header img {
+    max-width: 150%;
+    height:auto
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    background: #787272;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+
+}
+
+.container{
+    width:90%;
+    max-width:500px;
+    margin: 0 auto;
+    padding:20px;
+    box-shadow: 0px 0px 20px #00000010;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group{
+    width:100%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.form-group input,
+.form-group textarea{
+    width:100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid silver;
+    margin-top: 5px;
+}
+
+text{
+    resize: vertical;
+}
+button{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 8px;
+    font-family: sans-serif;
+    color:black;
+    text-align  :center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: .3s ease background-color;
+}
+
+button[type="submit"]:hover{
+    background-color:black
+}
+
